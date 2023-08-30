@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+:root {
+  --primary-color: #4338ca;
+  --secondary-color: #818cf8;
+}
+body {
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  color: white;
+}
+
+.hero-heading {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+.hero-heading h1 {
+  margin: 0;
+}
+.container {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.hero-para {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.hero-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.hero-input {
+  width: 40%;
+  margin: 5px auto;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.hero-btn {
+  margin: 1rem auto;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  /* background-color: var(--primary-color); */
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #352dae;
+  color: white;
+}
+
+.hero-table {
+  border: 3px solid var(--secondary-color);
+  width: 90%;
+  margin: 1rem auto;
+  font-size: 1rem;
+  border-collapse: collapse;
+}
+
+.hero-table caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-table th,
+.hero-table td {
+  border: 2px solid var(--secondary-color);
+  padding: 8px;
+  text-align: center;
+}
+.footer {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .hero-input {
+    width: 90%; /* Adjust input width for mobile */
+  }
+  .hero-div-table {
+    overflow-x: auto;
+  }
+  .hero-table {
+    width: 100%; /* Adjust table width for mobile */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+}
